@@ -42,6 +42,8 @@ github pages:
 <h2>Credits</h2>
 <p>https://www.youtube.com/watch?v=OnWTTUfBLMo</p>
 <p>https://www.youtube.com/watch?v=yqaLSlPOUxM</p>
+<p>https://www.youtube.com/watch?v=h5apE3E72wY&list=PLj0z0WBaTiH7jOjO7C0w2lSeuuisoiSR9</p>
+<p>https://www.youtube.com/watch?v=oF28ns9eVdc</p>
 
 <h3>Content</h3>
 <p></p>
