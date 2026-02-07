@@ -51,6 +51,8 @@ github pages:
 <h3>Media</h3>
 <p>Photos used in this site were obtained from</p>
 <p>https://www.pinterest.com/pin/8796161766859804/</p>
+<p>USB MP3 Music Player:</p>
+<p>https://www.pinterest.com/pin/62206038598905477/</p>
 
 <h3>Acknowledgements</h3>
 <p>I received inspiration from</p>

@@ -7,6 +7,20 @@ body {
     background-color: white;
 }
 
+h1 {
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p {
+    font-family: "Orbitron", sans-serif;
+    color: black;
+    font-size: 1.5em;
+    text-align: center;
+}
+
 /* Login Page */
 .box-area{
     width: 930px;
@@ -34,6 +48,7 @@ body {
 .input-group button {
     background-color: black;
     border: none;
+    border-radius: 5px;
 }
 
  .input-group button:hover {
@@ -140,7 +155,6 @@ body {
     height: max-content;
     padding-left: 50px;
     padding-right: 50px;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -180,6 +194,37 @@ body {
     background-position: top center;
 }
 
+/* Home Page Content */
+.button {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    border-radius: 0px;
+}
+
+ .button:hover {
+    background-color: grey;
+    color: white;
+ }
+
+/* Contact Form */
+.btn-contact {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-contact:hover {
+    background-color: grey;
+    color: white;
+}
+
 /* Responsive */
 @media (min-width: 992px) {
     .nav-link::before{
@@ -202,10 +247,10 @@ body {
 }
 
 @media (max-width: 768px) {
-    .box-area{
+    .box-area {
         margin: 0 10px;
     }
-    .left-box{
+    .left-box {
         min-height: 250px;
         padding: 20px;
     }
@@ -213,7 +258,7 @@ body {
         max-height: 30px;
     }
 
-    .banner .content{
+    .banner .content {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -229,28 +274,28 @@ body {
     align-items: center;
 }
 
-.banner .content h1{
+.banner .content h1 {
     font-family: "Orbitron", sans-serif;
     font-size: 27px;
     line-height: 0em;
     color: black;
 }
 
-.banner .content .statement p b{
+.banner .content .statement p b {
     font-family: "Orbitron", sans-serif;
     font-size: 15px;
     text-align: right;
     max-width: 100%;
 }
 
-.banner .content .statement p{
+.banner .content .statement p {
     font-family: "Urbanist", sans-serif;
     font-size: 7px;
     text-align: right;
     max-width: 100%;
 }
 
-.banner .content .person{
+.banner .content .person {
     background-image: url(images/vintagerecordplayer.png);
     width: 100%;
     height: 55vh;
@@ -260,5 +305,12 @@ body {
     background-size: auto 130%;
     background-repeat: no-repeat;
     background-position: top center;
+}
+
+.shop-button {
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    font-size: 1.1rem;
 }
 }
