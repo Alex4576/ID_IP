@@ -6,6 +6,23 @@ body {
     padding: 0;
     background-color: white;
 }
+ 
+/* Logging in Lottie Animation */
+.animation-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-text {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    position: relative;
+    top: 170px;
+    font-family: "Orbitron", sans-serif;
+}
 
 h1 {
     font-family: "Orbitron", sans-serif;
@@ -224,6 +241,7 @@ p {
     background-color: grey;
     color: white;
 }
+
 
 /* Responsive */
 @media (min-width: 992px) {
