@@ -230,6 +230,261 @@ p {
     color: white;
  }
 
+/* Shop Page */
+.svg {
+    width: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.icon-cart {
+    position: relative;
+}
+
+.icon-cart span {
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cart Tab */
+.cartTab h1 {
+    color: white;
+}
+
+.cartTab {
+    background-color: black;
+    color: white;
+    width: 400px;
+    max-width: 100%;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.cartTab h1 {
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .btn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+    background-color: #3adee4;
+    border: none;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+}
+
+.cartTab .btn button.close {
+    background-color: white;
+}
+
+.cartTab .listCart {
+    overflow: auto;
+}
+
+.cartTab .listCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.cartTab {
+    right: -400px;
+    transition: 0.5s;
+}
+
+body.activeTabCart .cartTab {
+    right: 0;
+}
+
+/* List of products */
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 5px 30px #96b7ff);
+}
+
+.listProduct {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 65px;
+}
+
+.listProduct .item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    outline: 1px solid rgb(128, 128, 128);
+}
+
+.listProduct .item h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price {
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.listProduct .item button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+/* List of Cart Items */
+.listCart .item img{
+    width: 100%;
+}
+
+.listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.listCart .item .quantity {
+    display: flex;
+}
+
+.listCart .item .quantity span {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .item .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: white;
+}
+
+.listCart .item:nth-child(even) {
+    background-color: rgb(35, 35, 35);
+}
+
+/* Product Detail */
+.detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: left;
+}
+
+.detail .image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.detail .image {
+    position: relative;
+    z-index: -1;
+}
+
+.detail .image::before {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    content: '';
+    background-color: #96b7ff;
+    z-index: -1;
+    border-radius: 190px 100px 170px 180px;
+    left: calc(50% - 150px);
+    top: 50px;
+}
+
+.detail .name {
+    font-size: x-large;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+}
+
+.detail .price {
+    font-size: x-large;
+    letter-spacing: 7px;
+    margin-bottom: 20px;
+    font-family: "Urbanist", sans-serif;
+}
+
+.detail .buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.detail .buttons button {
+    border: none;
+    padding: 15px 20px;
+    font-family: "Orbitron", sans-serif;
+    font-size: large;
+}
+
+.detail svg {
+    width: 30px;
+}
+
+.detail .buttons button:nth-child(2) {
+    background-color: black;
+    color: #eee;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.detail .description {
+    font-weight: 300;
+    margin-top: 20px;
+}
+
 /* Contact Form */
 .btn-contact {
     background-color: black;
@@ -240,6 +495,165 @@ p {
 .btn-contact:hover {
     background-color: grey;
     color: white;
+}
+
+/* About Section */
+.floating-container {
+  display: flex;
+  justify-content: center; /* Centers the bubble horizontally */
+  padding: 40px 0;         /* Adds space above and below */
+  margin-top: 140px;
+}
+ 
+.floating-text {
+  /* The "Bubble" look */
+  background-color: #3adee4;
+  padding: 20px 60px;
+  border-radius: 20px;    /* Makes the edges highly rounded like a bubble */
+ 
+  /* The "Floating" look */
+  box-shadow: 0 30px 25px rgba(0, 0, 0, 0.2); /* Soft shadow for elevation */
+ 
+  /* Text styling */
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 0;
+  display: inline-block;  /* Ensures the bubble only wraps the text */
+  font-family: "Orbitron", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-side {
+    flex: 1;
+    text-align: center; /* This centers the text lines and the inline-block title */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This ensures the underlined title stays centered */
+}
+ 
+.title1 {
+    display: inline-block;
+    border-bottom: 2px solid #959595;
+    margin-bottom: 15px; /* Adds space between the title and the description */
+}
+ 
+.content1 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #444;
+    max-width: 80% /* Optional: keeps the description from getting too wide */
+}
+.carousel {
+    margin: 40px 0;
+    width: 100%;
+    border: none; /* Removed the red border */
+    display: flex;
+    overflow: hidden; /* Changed from auto to hidden for the "infinite" look */
+}
+.carousel::-webkit-scrollbar{
+    display:none;
+}
+.abt-card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    animation: spin 5s infinite linear;
+    padding-right: 1.5em;
+}
+@keyframes spin{
+    from{translate: 0;}
+    to {translate: -100%;}
+}
+.schedule {
+    font-family: "Orbitron", sans-serif;
+    background-color: #3adee4;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(58, 222, 228, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+.schedule:hover {
+    background-color: #2bc3c9;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(58, 222, 228, 0.5);
+}
+ 
+.schedule:active {
+    transform: translateY(-1px);
+}
+ 
+.variety, .schedule-section {
+    padding: 80px 0;
+}
+ 
+/* Heading Spacing */
+.title1 {
+    display: inline-block;
+    border-bottom: 2px solid #959595;
+    margin-bottom: 30px; /* Space between title and description */
+}
+ 
+/* Paragraph/Content Spacing */
+.content1 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8;   /* This makes the text much easier to read */
+    color: #555;
+    max-width: 700px;   /* Prevents lines from being too long to read */
+    margin-bottom: 40px; /* Space before the CTA heading */
+}
+ 
+/* CTA Heading Spacing */
+.call-to-action {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 25px; /* Space before the button */
+}
+ 
+/* Carousel Fix - Remove the auto margin and use flex gap */
+.carousel {
+    margin: 40px 0;
+    width: 100%;
+    border: none; /* Removed the red border */
+    display: flex;
+    overflow: hidden; /* Changed from auto to hidden for the "infinite" look */
+}
+.button-group {
+    display: flex;         /* Enables side-by-side layout */
+    flex-direction: row;   /* Ensures buttons stay in a line */
+    justify-content: center; /* Centers the buttons horizontally */
+    gap: 20px;             /* Adds even space between the two buttons */
+    margin-top: 10px;      /* Pushes the button group away from the text above */
+}
+ 
+/* Optional: Adjust for mobile screens so buttons don't get squished */
+@media (max-width: 480px) {
+    .button-group {
+        flex-direction: column; /* Stacks them on very small phones */
+        width: 100%;
+    }
+    .schedule {
+        width: 100%; /* Makes buttons full-width on mobile */
+    }
 }
 
 
@@ -262,16 +676,30 @@ p {
         width: 100%;
         visibility: visible;
     }
+
+    .listProduct {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
+    .detail .buttons {
+        justify-content: center;
+    }
+
+    .detail .buttons button:nth-child(2) {
+    height: 45px;
+    }
+
     .box-area {
         margin: 0 10px;
     }
+
     .left-box {
         min-height: 250px;
         padding: 20px;
     }
+
     .navbar-brand img {
         max-height: 30px;
     }
@@ -330,5 +758,39 @@ p {
     max-width: 250px;
     height: 40px;
     font-size: 1.1rem;
+}
+
+.listProduct {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.detail .image::before {
+    margin-top: 30px;
+}
+
+.detail .image img {
+    width: 55%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    padding-top: 15%;
+}
+
+.detail .name {
+    font-size: x-large;
+    margin: 0;
+}
+
+.detail .buttons button {
+    font-size: small;
+}
+
+.detail .description {
+    padding: 0 65px;
 }
 }

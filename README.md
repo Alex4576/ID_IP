@@ -40,19 +40,23 @@ github pages:
 <p></p>
 
 <h2>Credits</h2>
-<p>https://www.youtube.com/watch?v=OnWTTUfBLMo</p>
 <p>https://www.youtube.com/watch?v=yqaLSlPOUxM</p>
 <p>https://www.youtube.com/watch?v=h5apE3E72wY&list=PLj0z0WBaTiH7jOjO7C0w2lSeuuisoiSR9</p>
 <p>https://www.youtube.com/watch?v=oF28ns9eVdc</p>
+<p>https://www.youtube.com/watch?v=pM9tQ1u6oF0</p>
 
 <h3>Content</h3>
 <p></p>
 
 <h3>Media</h3>
 <p>Photos used in this site were obtained from</p>
-<p>https://www.pinterest.com/pin/8796161766859804/</p>
+<p>Images used in the Image Sliders and Retro Boombox were taken from Freepik</p>
+<p>Icons used in this site were obtained from</p>
+<p>https://flowbite.com/icons/</p>
 <p>USB MP3 Music Player:</p>
 <p>https://www.pinterest.com/pin/62206038598905477/</p>
+<p>Vintage CD Player</p>
+<p>https://www.pinterest.com/pin/322218548314685793/</p>
 
 <h3>Acknowledgements</h3>
 <p>I received inspiration from</p>
