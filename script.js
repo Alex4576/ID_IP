@@ -1,11 +1,3 @@
-/* Login Lottie Animation */
-console.log('Need to wait');
-
-setTimeout(function() {
-    console.log('setting window location');
-    window.location.href = "index.html";
-}, 3000)
-
 /* Contact Form */
 const API_KEY = "69844f53bf4bcc5efe53e46b";
 const URL = "https://contactus-2ce8.restdb.io/rest/contact-info";
