@@ -39,7 +39,7 @@ const products = [
         "name": "Vintage Walkman",
         "price": 100,
         "description": "Description",
-        "image": "images/retroboomboxnobg.png"
+        "image": "images/vintagewalkmannobg.png"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@ const products = [
         "name": "Vintage Radio",
         "price": 120,
         "description": "Description",
-        "image": "images/retroboomboxnobg.png"
+        "image": "images/vintageradionobg.png"
     },
 ];
 export default products;

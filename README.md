@@ -50,13 +50,15 @@ github pages:
 
 <h3>Media</h3>
 <p>Photos used in this site were obtained from</p>
-<p>Images used in the Image Sliders and Retro Boombox were taken from Freepik</p>
+<p>Images used in the Image Sliders, Retro Boombox and Vintage Radio were taken from Freepik</p>
 <p>Icons used in this site were obtained from</p>
 <p>https://flowbite.com/icons/</p>
 <p>USB MP3 Music Player:</p>
 <p>https://www.pinterest.com/pin/62206038598905477/</p>
 <p>Vintage CD Player</p>
 <p>https://www.pinterest.com/pin/322218548314685793/</p>
+<p>Vintage Walkman</p>
+<p>https://www.pinterest.com/pin/7740630606425915/</p>
 
 <h3>Acknowledgements</h3>
 <p>I received inspiration from</p>
