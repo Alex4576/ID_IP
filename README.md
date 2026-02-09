@@ -44,6 +44,8 @@ github pages:
 <p>https://www.youtube.com/watch?v=h5apE3E72wY&list=PLj0z0WBaTiH7jOjO7C0w2lSeuuisoiSR9</p>
 <p>https://www.youtube.com/watch?v=oF28ns9eVdc</p>
 <p>https://www.youtube.com/watch?v=pM9tQ1u6oF0</p>
+<p>API Currency Converter</p>
+<p>https://www.youtube.com/watch?v=ZD_Yft-Qd9Y&list=PLNCevxogE3fiLT6bEObGeVfHVLnttptKv&index=12</p>
 
 <h3>Content</h3>
 <p></p>
