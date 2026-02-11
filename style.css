@@ -36,6 +36,10 @@ p {
 }
 
 /* Login Page */
+.header-text p {
+    text-align: left;
+}
+
 .box-area{
     width: 930px;
 }
@@ -490,6 +494,122 @@ body.activeTabCart .cartTab {
     color: white;
 }
 
+/* Schedule Section */
+.schedule-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 15px 40px 15px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.calendar-wrapper {
+  width: 450px;
+  max-width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  margin-right: 80px;
+}
+
+.calendar-wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+  gap: 5px;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+header .icons span:hover {
+  background: #f2f2f2;
+}
+
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar {
+  padding: 20px;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.calendar .weeks li {
+    width: calc(100% / 7);
+    font-weight: 500;
+}
+
+.calendar .days li {
+    width: calc(100% / 7);
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.calendar .days li.inactive {
+    color: rgb(210, 210, 210);
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.calendar .days li.active {
+    color: white;
+}
+
+.calendar .days li.active::before {
+    background: black;
+}
+
+.calendar .days li.booked {
+    color: white !important;
+    cursor: not-allowed;
+}
+
+.calendar .days li.booked::before {
+    background: red;
+}
+
+.calendar .days li:not(.inactive):not(.booked):hover::before {
+    background: rgb(172, 172, 172);
+}
+
+
 /* About Section */
 .floating-container {
   display: flex;
@@ -680,8 +800,9 @@ select {
     background-repeat: no-repeat;
     background-position: right 15px top 50%, center;
     background-size: 15px;
-    background-color: black;
+    background-color: rgb(166, 166, 166);
     color: white;
+    border: none;
 }
 
 .select option {
@@ -760,18 +881,18 @@ select {
     }
 
     .banner .content {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    height: max-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: min(1400px, 100vw);
+        height: max-content;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .banner .content h1 {
@@ -845,11 +966,53 @@ select {
     .detail .description {
         padding: 0 65px;
     }
+
+    .schedule-page {
+        padding: 60px 15px 20px 15px;
+    }
+
+    .calendar-wrapper {
+        width: 90%;
+    }
+
+    header .current-date {
+        font-size: 1.2rem;
+    }
+
+    .calendar li {
+        font-size: 0.9rem;
+    }
+
+    .calendar .days li::before {
+        height: 30px;
+        width: 30px;
+    }
+
+    .calendar .days li {
+        margin-top: 20px;
+    }
+
+    .calendar-title {
+        font-size: 1.6rem;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 480px) {
     .button-group {
         flex-direction: column;
         width: 100%;
+    }
+    
+    .calendar-title {
+        font-size: 1.2rem;
+    }
+
+    .calendar-wrapper {
+        width: 100%;
+    }
+
+    .schedule-page {
+        padding: 40px 10px 20px 10px;
     }
 }
