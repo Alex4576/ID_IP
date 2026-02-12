@@ -3,14 +3,14 @@
         {
             id: 1,
             title: "Vintage Gramophone",
-            subtitle: "subtitle",
-            description: "A vintage, hand-cranked device patented Made in 1887, for playing sound from flat discs, often used to play 78RPM records",
+            subtitle: "Made in 1887",
+            description: "A vintage, hand-cranked device patented in 1887, for playing sound from flat discs, often used to play 78RPM records",
             currentBid: 15000,
             minIncrement: 100,
             endTime: new Date(Date.now() + 2 * 60 * 60 * 1000), // 2 hours
             bidders: 3,
             condition: "Fair",
-            image: "images/antiquesobjects.jpg",
+            image: "images/gramophonetablenobg.png",
             bids: [
                 {bidder: "Tim", amount: 15000, time: "2 min ago"},
                 {bidder: "Mary", amount: 14000, time: "5 min ago"},
@@ -19,15 +19,15 @@
  },
  {
      id: 2,
-            title: "Vintage Acoustic Guitar",
-            subtitle: "subtitle",
+            title: "Vintage Electric Guitar",
+            subtitle: "Made in 1990",
             description: "A timeless antique used to this very day.This guitar combines the aesthetics of the 90s while the practicality of any guitar.",
             currentBid: 10000,
             minIncrement: 100,
-            endTime: new Date(Date.now() + 1 * 60 * 60 * 1000), // 2 hours
+            endTime: new Date(Date.now() + 1 * 30 * 30 * 1000),
             bidders: 2,
-            condition: "Good",
-            image: "images/radionatureconcept.jpg",
+            condition: "Excellent",
+            image: "images/guitarnobg.png",
             bids: [
                 {bidder: "Mary", amount: 10000, time: "2 min ago"},
                 {bidder: "Luke", amount: 9000, time: "5 min ago"},
@@ -36,14 +36,14 @@
          {
      id: 3,
             title: "Vintage Brass Trumpet",
-            subtitle: "subtitle",
+            subtitle: "Made in 1950",
             description: "A instrument used in most band, this brass trumpet perfectly catches the vibe of something retro while retaining its original use and retro design.",
             currentBid: 15000,
             minIncrement: 100,
-            endTime: new Date(Date.now() + 1 * 60 * 60 * 1000), // 2 hours
+            endTime: new Date(Date.now() + 1 * 5 * 5 * 1000),
             bidders: 2,
             condition: "Good",
-            image: "images/messyinterior.jpg",
+            image: "images/vintagetrumpetnobg.png",
             bids: [
                 {bidder: "Lisa", amount: 15000, time: "2 min ago"},
                 {bidder: "Mary", amount: 13000, time: "25 min ago"},
@@ -245,6 +245,11 @@ function openBiddingModal(itemId) {
 
     // Place Bid
     function placeBid() {
+        if (Date.now() >= currentItem.endTime) {
+            showToast('Auction has ended. You cannot place a bid.', 'error');
+            return;
+        }
+
         const bidInput = document.getElementById('bidAmount');
         const bidAmount = parseInt(bidInput.value);
 
@@ -296,9 +301,13 @@ function openBiddingModal(itemId) {
 
     // Simulate Other Bidders
     function simulateOtherBidders() {
+        if (Date.now() >= currentItem.endTime) return;
+
+        const bidInput = document.getElementById('bidAmount');
+
         setTimeout(() => {
-            if (Math.random() > 0.5) {
-                const bidderNames = ['Collector_X', 'Auction_Pro'];
+            if (Math.random() > 0.1) {
+                const bidderNames = ['Mary', 'John'];
                 const randomBidder = bidderNames[Math.floor(Math.random() * bidderNames.length)];
                 const bidIncrement = currentItem.minIncrement * (Math.floor(Math.random() * 3) + 1);
                 const newBid = currentItem.currentBid + bidIncrement;
@@ -311,6 +320,7 @@ function openBiddingModal(itemId) {
 
                 currentItem.currentBid = newBid;
                 currentItem.bids.unshift(otherBid);
+                currentItem.bidders += 1;
 
                 // Update modal
                 document.getElementById('modalCurrentBid').textContent = `$${newBid.toLocaleString()}`;

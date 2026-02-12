@@ -479,576 +479,492 @@ body.activeTabCart .cartTab {
 }
 
 /* Auction Page */
-       /* Hero Section */
-        .hero {
-            margin-top: 80px;
-            height: 700px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: radial-gradient(circle, #bbd0ff, white, white);
-        }
-
-        .hero-content {
-            max-width: 800px;
-            padding: 0 20px;
-        }
-
-        .hero-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            color: black;
-        }
-
-        .hero-content p {
-            font-family: "Urbanist", sans-serif;;
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.95;
-            color: black;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 15px 40px;
-            background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 700;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 104, 195, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 58, 184, 0.4);
-        }
-
-        /* Main Container */
-        .main-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 60px 30px;
-        }
-
-        /* Auction Items Grid */
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-header h2 {
-            font-size: 2.5rem;
-            color: black;
-            margin-bottom: 15px;
-        }
-
-        .section-header p {
-            font-size: 1.1rem;
-            color: white;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .auction-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .auction-item {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 20px rgba(134, 134, 134, 0.3);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .auction-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
-        }
-
-        .auction-item.ending-soon::before {
-            content: 'ENDING SOON';
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: red;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            animation: flash 1s infinite;
-        }
-
-        @keyframes flash {
-            0%, 50%, 100% {opacity: 1;}
-            25%, 75% {opacity: 0.5}
-        }
-
-        .item-image {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .item-content {
-            padding: 25px;
-        }
-
-        .item-title {
-            font-size: 1.3;
-            color: black;
-            margin-bottom: 10px;
-            line-height: 1.3;
-        }
-
-        .item-description {
-            font-family: "Urbanist", sans-serif;
-            color: gray;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-
-        .item-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            padding: 15px;
-            border: 1px solid rgb(183, 183, 183);
-            border-radius: 10px;
-        }
-
-        .current-bid {
-            text-align: center;
-        }
-
-        .bid-label {
-            color: black;
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-        }
-
-        .bid-amount {
-            font-size: 1.5rem;
-            color: black;
-            font-weight: 700;
-        }
-
-        .countdown {
-            text-align: center;
-        }
-
-        .countdown-label {
-            color: black;
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-        }
-
-        .countdown-time {
-            font-family: "Urbanist", sans-serif;
-            font-size: 1.2rem;
-            color: black;
-            font-weight: 600;
-        }
-
-        .bid-now-btn {
-            width: 100%;
-            padding: 12px;
-            background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-
-        .bid-now-btn:hover {
-            background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-            transform: translateY(-2px);
-        }
-
-        /* Bidding Modal */
-        .bidding-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.9);
-            z-index: 3000;
-            overflow-y: auto;
-        }
-
-        .modal-content {
-            max-width: 1000px;
-            margin: 50px auto;
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-        }
-
-        .close-modal {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 2rem;
-            color: white;
-            cursor: pointer;
-            z-index: 10;
-            background: black;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .close-modal:hover {
-            background: white;
-            color: black;
-            transform: rotate(90deg);
-        }
-
-        .modal-header {
-            position: relative;
-            height: 400px;
-            background: black;
-        }
-
-        .modal-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.8;
-        }
-
-        .modal-header-content {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 40px;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-        }
-
-        .modal-title {
-            font-size: 2.5rem;
-            color: black;
-            margin-bottom: 10px;
-        }
-
-        .modal-subtitle {
-            font-size: 1.2rem;
-            color: black;
-            opacity: 0.9;
-        }
-
-        .modal-body {
-            padding: 40px;
-        }
-
-        .bidding-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .bidding-info {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid black;
-        }
-
-        .bidding-info h3 {
-            font-size: 1.5rem;
-            color: black;
-            margin-bottom: 20px;
-        }
-
-        .info-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid black;
-        }
-
-        .info-label {
-            color: black;
-        }
-
-        .info-value {
-            color: black;
-            font-weight: 600;
-        }
-
-        .current-bid-display {
-            text-align: center;
-            margin: 30px 0;
-            border-radius: 15px;
-        }
-
-        .current-bid-amount {
-            font-size: 3rem;
-            color: black;
-            margin-bottom: 10px;
-        }
-
-        .bid-increment {
-            color: gray;
-            font-size: 1.1rem;
-        }
-
-        .bid-form h3 {
-            margin-bottom: 20px;
-        }
-
-        .bid-input-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: black;
-            font-weight: 500;
-        }
-
-        .bid-input {
-            width: 100%;
-            padding: 15px;
-            background: white;
-            border: 1px solid black;
-            border-radius: 10px;
-            color: black;
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-
-        .bid-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 25px;
-        }
-
-        .quick-bid-btn {
-            flex: 1;
-            padding: 15px;
-            background: white;
-            color: black;
-            border: 1px solid black;
-            border-radius: 10px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .quick-bid-btn:hover {
-            background: black;
-            border-color: black;
-            color: white;
-        }
-
-        .place-bid-btn {
-            flex: 2;
-            padding: 15px;
-            background: white;
-            color: black;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1.1rem;
-        }
-
-        .place-bid-btn:hover {
-            background: black;
-            color: white;
-            transform: translateY(-2px);
-            border-color: black;
-            box-shadow: 0 5px 20px black;
-        }
-
-        .bid-history {
-            margin-top: 40px;
-        }
-
-        .bid-history h3 {
-            font-size: 1.5rem;
-            color: black;
-            margin-bottom: 20px;
-        }
-
-        .bid-list {
-            max-height: 300px;
-            overflow-y: auto;
-        }
-
-        .bid-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .bidder-info {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .bidder-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 700;
-        }
-
-        .bidder-name {
-            font-weight: 600;
-        }
-
-        .bid-amount-history {
-            color: black;
-            font-weight: 700;
-        }
-
-        .bid-time {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-        }
-
-        /* How to Bid Section */
-        .how-to-bid {
-            background-color: purple;
-            border-radius: 20px;
-            padding: 50px;
-            margin: 60px 0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .how-to-bid h2 {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 2.5rem;
-            color: #ffd700;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .step {
-            background: rgba(255, 215, 0, 0.5);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .step:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.08);
-        }
-
-        .step-number {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #ffd700 0%, #ffe4a1 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: flex;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.5rem;
-            color: #1a237e;
-            font-weight: 700;
-        }
-
-        .step h3 {
-            font-family: 'Courier New', Courier, monospace;
-            color: white;
-            margin-bottom: 15px;
-        }
-
-        .step p {
-            color: white;
-            line-height: 1.6;
-        }
-
-        /* Toast Notification */
-        .toast {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: linear-gradient(135deg, #ffd700 0%, #ffe4a1 100%);
-            color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transform: translateX(400px);
-            transition: transform 0.3s ease;
-            z-index: 4000;
-            font-weight: 600;
-        }
-
-        .toast.show {
-            transform: translateX(0);
-        }
-
-        .toast.error {
-            background: linear-gradient(135deg, #ff0037 0%, #ffa1a1 100%);;
-        }
-
-        .toast.warning {
-            background: linear-gradient(135deg, #ffd700 0%, #ffe4a1 100%);;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .bidding-section {
-                grid-template-columns: 1fr;
-            }
-
-            .bid-buttons {
-                flex-direction: column;
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+/* Hero Section */
+.hero {
+    margin-top: 80px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(circle, #bbd0ff, white, white);
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hero-content p {
+    font-family: "Urbanist", sans-serif;;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+    color: black;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 104, 195, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 58, 184, 0.4);
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 30px;
+}
+
+/* Auction Items Grid */
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.auction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.auction-item {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(134, 134, 134, 0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.auction-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.auction-item.ending-soon::before {
+    content: 'ENDING SOON';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: red;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0.5}
+}
+
+.item-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.item-content {
+    padding: 25px;
+}
+
+.item-title {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.item-description {
+    font-family: "Urbanist", sans-serif;
+    color: gray;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.item-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgb(183, 183, 183);
+    border-radius: 10px;
+}
+
+.current-bid {
+    text-align: center;
+}
+
+.bid-label {
+    color: black;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.bid-amount {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+}
+
+.countdown {
+    text-align: center;
+}
+
+.countdown-label {
+    color: black;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.countdown-time {
+    font-family: "Urbanist", sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+}
+
+.bid-now-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.bid-now-btn:hover {
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
+    transform: translateY(-2px);
+}
+
+/* Bidding Modal */
+.bidding-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 3000;
+    overflow-y: auto;
+    }
+
+.modal-content {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.close-modal:hover {
+    background: white;
+    color: black;
+    transform: rotate(90deg);
+}
+
+.modal-header {
+    position: relative;
+    height: 400px;
+    background: black;
+}
+
+.modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.modal-header-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+}
+
+.modal-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.modal-subtitle {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.modal-body {
+    padding: 40px;
+}
+
+.bidding-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.bidding-info {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.bidding-info h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+}
+
+.info-label {
+    color: black;
+}
+
+.info-value {
+    color: black;
+    font-weight: 600;
+}
+
+.current-bid-display {
+    text-align: center;
+    margin: 30px 0;
+    border-radius: 15px;
+}
+
+.current-bid-amount {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.bid-increment {
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.bid-form h3 {
+    margin-bottom: 20px;
+}
+
+.bid-input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: black;
+    font-weight: 500;
+}
+
+.bid-input {
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.bid-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.quick-bid-btn {
+    flex: 1;
+    padding: 15px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quick-bid-btn:hover {
+    background: black;
+    border-color: black;
+    color: white;
+}
+
+.place-bid-btn {
+    flex: 2;
+    padding: 15px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.place-bid-btn:hover {
+    background: black;
+    color: white;
+    transform: translateY(-2px);
+    border-color: black;
+    box-shadow: 0 5px 20px black;
+}
+
+.bid-history {
+    margin-top: 40px;
+}
+
+.bid-history h3 {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.bid-list {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.bid-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.bidder-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bidder-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+}
+
+.bidder-name {
+    font-weight: 600;
+}
+
+.bid-amount-history {
+    color: black;
+    font-weight: 700;
+}
+
+.bid-time {
+    color: black;
+    font-size: 0.9rem;
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: black;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    z-index: 4000;
+    font-weight: 600;
+}
+
+.toast.show {
+    transform: translateX(0);
+}
+
+.toast.warning {
+    background: black;
+}
 
 
 /* Contact Form */
@@ -1406,6 +1322,173 @@ select {
     font-family: "Urbanist", sans-serif;
 }
 
+/* Profile */
+.rs-glass-wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; /* Aligns it below your fixed 80px navbar */
+    position: relative;
+    z-index: 99;
+}
+ 
+.rs-glass-panel {
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px) saturate(160%);
+    -webkit-backdrop-filter: blur(15px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    animation: rsFadeInDown 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+ 
+.rs-glass-profile-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ 
+.rs-glass-avatar img {
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+ 
+.rs-glass-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    margin: 0;
+    font-weight: 700;
+    text-align: center;
+}
+ 
+.rs-glass-status {
+    font-size: 0.8rem;
+    color: #555;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+ 
+.rs-glass-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 30px;
+}
+ 
+.rs-glass-stats {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+ 
+.rs-glass-label {
+    display: block;
+    font-size: 0.7rem;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+ 
+.rs-glass-value {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 600;
+}
+ 
+.rs-glass-btn-main {
+    background: #000;
+    color: #fff !important;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+ 
+.rs-glass-btn-main:hover {
+    background: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+ 
+@keyframes rsFadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+/* Responsive Scaling */
+@media (max-width: 992px) {
+    .rs-glass-panel {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    .rs-glass-divider {
+        display: none;
+    }
+    .rs-glass-stats {
+        width: 100%;
+        gap: 15px;
+    }
+}
+/* Container to hold the two widgets side-by-side */
+.rs-grid-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto; /* Centers the grid */
+    padding: 0 20px 40px 20px;
+    display: flex;
+    gap: 20px; /* Space between the two widgets */
+    justify-content: space-between;
+}
+ 
+/* Modifier to make the glass panels smaller for the grid */
+.rs-grid-small {
+    flex: 1; /* Makes both widgets take up equal width */
+    max-width: calc(50% - 10px);
+    margin-top: 0 !important; /* Removes the top margin since it's in a grid */
+    padding: 20px !important;
+    flex-direction: column !important; /* Stack content inside on smaller widths */
+    gap: 15px;
+}
+ 
+/* Adjusting the stats for the smaller cards */
+.rs-grid-small .rs-glass-stats {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+}
+ 
+.rs-grid-small .rs-glass-actions {
+    width: 100%;
+}
+ 
+.rs-grid-small .rs-glass-btn-main {
+    display: block;
+    text-align: center;
+}
+ 
 
 /* Responsive */
 @media (min-width: 992px) {
@@ -1569,6 +1652,32 @@ select {
     .calendar-title {
         font-size: 1.6rem;
         margin-bottom: 30px;
+    }
+
+    /* Auction */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .bidding-section {
+        grid-template-columns: 1fr;
+    }
+
+    .bid-buttons {
+        flex-direction: column;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Profile */
+    .rs-grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rs-grid-small {
+        max-width: 100%;
     }
 }
 

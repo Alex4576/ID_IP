@@ -69,6 +69,8 @@ github pages:
 <p>https://www.pinterest.com/pin/9429480466381815/</p>
 <p>Vinyl Record</p>
 <p>https://www.freepik.com/free-photo/vintage-looking-vinyl-record_15024205.htm#fromView=search&page=1&position=6&uuid=5248d6db-11a6-426c-8dbb-1cf7f9753e8f&query=vinyl</p>
+<p>Vintage Electric Guitar</p>
+<p>https://pixabay.com/photos/guitar-music-instrument-1022710/</p>
 
 <h3>Acknowledgements</h3>
 <p>I received inspiration from</p>

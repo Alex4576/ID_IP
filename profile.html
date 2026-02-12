@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifically Retro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="index.html">Home</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="productcatalogue.html">Shop</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="auction.html">Auction</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="schedule.html">Schedule</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="about.html">About Us</a>
+                    </li>
+                        <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active" aria-current="page" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="currencyconverter.html">Currency Converter</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            <a href="login.html" class="logout-button">Logout</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+ 
+    <div class="rs-glass-wrapper">
+        <div class="rs-glass-panel">
+            <div class="rs-glass-profile-section">
+                <div class="rs-glass-avatar">
+                    <img src="images/profile.png" alt="Profile">
+                </div>
+                <div class="rs-glass-info">
+                    <h2 class="rs-glass-name" id="displayName">Aoi Inuyama</h2>
+                    <p class="rs-glass-status">Bronze Status</p>
+                </div>
+            </div>
+            <div class="rs-glass-divider"></div>
+            <div class="rs-glass-stats">
+                <div class="rs-glass-stat-item">
+                    <span class="rs-glass-label">Auctions Won</span>
+                    <span class="rs-glass-value">3</span>
+                </div>
+                <div class="rs-glass-stat-item">
+                    <span class="rs-glass-label">5% Discount Coupon</span>
+                    <span class="rs-glass-value">1</span>
+                </div>
+                <div class="rs-glass-stat-item">
+                    <span class="rs-glass-label">Next Delivery</span>
+                    <span class="rs-glass-value">2 Days</span>
+                </div>
+            </div>
+            <div class="rs-glass-actions">
+                <a href="#" class="rs-glass-btn-main" id="editProfileBtn">Manage Profile</a>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="rs-grid-container">
+        <div class="rs-glass-panel rs-grid-small">
+            <div class="rs-glass-profile-section">
+                <div class="rs-glass-info"><h2 class="rs-glass-name">Saved Credit Cards</h2></div>
+            </div>
+            <div class="rs-glass-stats">
+                <div class="rs-glass-stat-item"><span class="rs-glass-value" id="displayCard">************1234</span></div>
+            </div>
+            <div class="rs-glass-actions"><a href="#" class="rs-glass-btn-main" id="editCardBtn">Edit Card Details</a></div>
+           
+        </div>
+ 
+        <div class="rs-glass-panel rs-grid-small">
+            <div class="rs-glass-profile-section">
+                <div class="rs-glass-info"><h2 class="rs-glass-name">SHIPPING ADDRESS</h2></div>
+            </div>
+            <div class="rs-glass-stats">
+                <div class="rs-glass-stat-item"><span class="rs-glass-value" id="displayAddress">121 Ami Drive #22-01</span></div>
+            </div>
+            <div class="rs-glass-actions"><a href="#" class="rs-glass-btn-main" id="editAddressBtn">Edit Address</a></div>
+           
+        </div>
+    </div>
+ 
+   
+ 
+        </div> <div class="rs-glass-wrapper" style="margin-top: 0; padding-top: 0;">
+        <div class="rs-glass-panel rs-grid-small" style="max-width: 1100px; flex: none; width: 100%;">
+            <div class="rs-glass-profile-section">
+                <div class="rs-glass-info">
+                    <h2 class="rs-glass-name">REWARDS</h2>
+                    <p class="rs-glass-status">5% Discount Coupon / Digital Collectible</p>
+                </div>
+            </div>
+            <div class="rs-glass-stats">
+                <div class="rs-glass-stat-item">
+                    <span class="rs-glass-label">Goal: Purchase 1 Item</span>
+                    <span class="rs-glass-value">STATUS: INCOMPLETE</span>
+                </div>
+            </div>
+            <div class="rs-glass-actions">
+                <a href="productcatalogue.html" class="rs-glass-btn-main">Go to Shop</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="font-family: 'Orbitron', sans-serif; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Edit Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="profileForm">
+                        <div class="mb-3">
+                            <label class="form-label">Edit Info</label>
+                            <input type="text" class="form-control" id="newName" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
