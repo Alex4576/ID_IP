@@ -57,6 +57,94 @@
 <br>
 <br>
 <br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+            <h1>Get Ready to Bid.</h1>
+            <p>A world of Unique items await you!</p>
+            <a href="#auctions" class="cta-button">View Live Auctions</a>
+        </div>
+      </section>
+
+      <!-- Main Container -->
+       <div class="main-container">
+
+         <!-- Live Auction -->
+          <section id="auctions">
+            <div class="section-header">
+                <h2>Live Auctions</h2>
+                <p>Place your bids on these exclusive items</p>
+            </div>
+            <div class="auction-grid" id="auctionGrid">
+                <!-- Auction items will be dynamically loaded here -->
+            </div>
+          </section>
+
+       <!-- Bidding Modal -->
+        <div class="bidding-modal" id="biddingModal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                <img class="modal-image" id="modalImage" src="" alt="">
+                <div class="modal-header-content">
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-subtitle" id="modalSubtitle"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="bidding-section">
+                    <div class="bidding-info">
+                        <span class="info-value" id="modalCurrentBid">$0</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Minimum Increment:</span>
+                        <span class="info-value" id="modalIncrement">$0</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Time Remaining:</span>
+                        <span class="info-value" id="modalTime">--:--:--</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Bidders:</span>
+                        <span class="info-value" id="modalBidders">0</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Condition:</span>
+                        <span class="info-value" id="modalCondition">Excellent</span>
+                    </div>
+
+                    <div class="current-bid-display">
+                        <div class="current-bid-amount" id="displayCurrentBid">$0</div>
+                        <div class="bid-increment">Min. bid: $<span id="displayMinBid">0</span></div>
+                    </div>
+                </div>
+
+                <div class="bid-form">
+                    <h3>Place your Bid</h3>
+                    <div class="bid-input-group">
+                        <label for="bidAmount">Your Bid Amount ($)</label>
+                        <input type="number" id="bidAmount" class="bid-input" placeholder="Enter Bid Amount">
+                    </div>
+                    <div class="bid-buttons">
+                        <button class="quick-bid-btn" onclick="quickBid()">Quick +$100</button>
+                        <button class="quick-bid-btn" onclick="quickBid()">Quick +$500</button>
+                        <button class="place-bid-btn" onclick="placeBid()">Bid</button>
+                    </div>
+                </div>
+                <div class="bid-history">
+                <h3>Bidding History</h3>
+                <div class="bid-list" id="bidHistory">
+                    <!-- Bid History -->
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Notification -->
+ <div class="toast" id="toast"></div>
+ <script src="auction.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

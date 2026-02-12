@@ -48,6 +48,8 @@ github pages:
 <p>https://www.youtube.com/watch?v=ZD_Yft-Qd9Y&list=PLNCevxogE3fiLT6bEObGeVfHVLnttptKv&index=12</p>
 <p>Calendar</p>
 <p>https://www.youtube.com/watch?v=Z1BGAivZRlE & TidyCal</p>
+<p>Auction</p>
+<p>https://www.youtube.com/watch?v=_8m6wHiJ7sA</p>
 
 <h3>Content</h3>
 <p></p>
@@ -63,6 +65,10 @@ github pages:
 <p>https://www.pinterest.com/pin/322218548314685793/</p>
 <p>Vintage Walkman</p>
 <p>https://www.pinterest.com/pin/7740630606425915/</p>
+<p>Cassette Player</p>
+<p>https://www.pinterest.com/pin/9429480466381815/</p>
+<p>Vinyl Record</p>
+<p>https://www.freepik.com/free-photo/vintage-looking-vinyl-record_15024205.htm#fromView=search&page=1&position=6&uuid=5248d6db-11a6-426c-8dbb-1cf7f9753e8f&query=vinyl</p>
 
 <h3>Acknowledgements</h3>
 <p>I received inspiration from</p>
