@@ -5,14 +5,12 @@ document.getElementById('api-signup-form').addEventListener('submit', async func
     const email = document.getElementById('api-email').value;
     const password = document.getElementById('api-password').value;
  
-    // Updated with your ACTUAL key from the screenshot
     const apiKey = "698ec00cbf4bcc663d53e4ef";
     const apiUrl = "https://userinfo-f1a2.restdb.io/rest/userinformation";
  
     btn.innerText = "Creating Account...";
     btn.disabled = true;
  
-    // ONLY send what is in your RestDB fields (email and password)
     const userData = {
         "email": email,
         "password": password
@@ -34,7 +32,7 @@ document.getElementById('api-signup-form').addEventListener('submit', async func
             window.location.href = 'login.html';
         } else {
             const errorData = await response.json();
-            // This will show you exactly what RestDB didn't like
+
             alert("Error: " + JSON.stringify(errorData));
             btn.innerText = "Sign Up";
             btn.disabled = false;

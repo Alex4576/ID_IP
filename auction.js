@@ -297,6 +297,7 @@ function openBiddingModal(itemId) {
 
         // Update main grid
         displayAuctionItems();
+        startAllCountdowns();
     }
 
     // Simulate Other Bidders
@@ -337,6 +338,7 @@ function openBiddingModal(itemId) {
 
                 // Update main grid
                 displayAuctionItems();
+                startAllCountdowns();
             }
         }, Math.random() * 5000 + 2000); // 2-7 seconds delay
     }

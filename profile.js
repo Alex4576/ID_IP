@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let activeTargetId = "";
     let cardData = {holder: "", number: "", expiry: "", cvv: ""};
  
-    // Helper function to open modal
     function openEditModal(targetId, titleText) {
         activeTargetId = targetId;
         modalTitle.innerText = titleText;
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         myModal.show();
     }
  
-    // Button Listeners
+
     document.getElementById('editProfileBtn').addEventListener('click', (e) => {
         e.preventDefault();
         openEditModal('displayName', 'Edit Profile Name');
@@ -46,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
         openEditModal('displayAddress', 'Update Shipping Address');
     });
  
-    // Save Logic
     profileForm.addEventListener('submit', (e) => {
         e.preventDefault();
 

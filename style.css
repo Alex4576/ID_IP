@@ -1186,23 +1186,6 @@ select {
     font-weight: 600;
 }
  
-.rs-glass-btn-main {
-    background: #000;
-    color: #fff !important;
-    text-decoration: none;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 0.75rem;
-    padding: 12px 25px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
- 
-.rs-glass-btn-main:hover {
-    background: #333;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
- 
 @keyframes rsFadeInDown {
     from {
         opacity: 0;
@@ -1272,6 +1255,7 @@ select {
 /* Button Style */
 /* Login Buttons */
 .input-group button {
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     background-color: black;
     border: none;
     border-radius: 5px;
@@ -1318,6 +1302,7 @@ select {
     background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
     transform: translateY(-2px);
     color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
  }
  
  /* Cart Tab Buttons */
@@ -1370,6 +1355,12 @@ select {
     height: 50px;
 }
 
+.detail .buttons button:nth-child(2):hover {
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 /* Auction Page Buttons */
 .cta-button {
     display: inline-block;
@@ -1380,12 +1371,11 @@ select {
     border-radius: 50px;
     font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 104, 195, 0.3);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 58, 184, 0.4);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .bid-now-btn {
@@ -1404,6 +1394,7 @@ select {
 .bid-now-btn:hover {
     background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .bid-buttons {
@@ -1428,12 +1419,13 @@ select {
     background: black;
     border-color: black;
     color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .place-bid-btn {
     flex: 2;
     padding: 15px;
-    background: black;
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     border-radius: 10px;
     border: none;
@@ -1443,23 +1435,25 @@ select {
 }
 
 .place-bid-btn:hover {
-    background: black;
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
     color: white;
     transform: translateY(-2px);
     border-color: black;
-    box-shadow: 0 5px 20px black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Contact Page Buttons */
 .btn-contact {
-    background-color: black;
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     border-radius: 5px;
 }
 
 .btn-contact:hover {
-    background-color: grey;
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* About Page Buttons */
@@ -1496,6 +1490,24 @@ select {
     margin-top: 10px;
 }
 
+/* Profile Buttons */
+.rs-glass-btn-main {
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
+    color: #fff !important;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+ 
+.rs-glass-btn-main:hover {
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
 /* API Currency Converter Button */
 .wrapper button {
     font-size: 1em;
@@ -1504,9 +1516,14 @@ select {
     margin-top: 2em;
     border: none;
     color: white;
-    background-color: black;
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     padding: 0.8em 0;
     border-radius: 5px;
+}
+
+.wrapper button:hover {
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
+    transform: translateY(-2px);
 }
 
 /* Responsive */
@@ -1572,19 +1589,18 @@ select {
     }
 
     .banner .content h1 {
-        font-size: 27px;
+        font-size: 38px;
         line-height: 0em;
         color: black;
     }
 
     .banner .content .statement p b {
-        font-size: 15px;
+        font-size: 20px;
         text-align: right;
         max-width: 100%;
     }
 
     .banner .content .statement p {
-        font-family: "Urbanist", sans-serif;
         font-size: 7px;
         text-align: right;
         max-width: 100%;
@@ -1593,7 +1609,7 @@ select {
     .banner .content .person {
         background-image: url(images/vintagerecordplayer.png);
         width: 100%;
-        height: 55vh;
+        height: 50vh;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -1708,10 +1724,53 @@ select {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
+    .button {
+        width: 40%;
+        height: auto;
+    }
+    .container h1, .variety h2, p {
+        font-size: 90%;
+    }
+    
+    .banner .content h1 {
+        font-size: 20px;
+        line-height: 0em;
+        color: black;
+    }
+
+    .banner .content .statement p b {
+        font-size: 10px;
+        text-align: right;
+        max-width: 100%;
+    }
+
+    .banner .content .statement p {
+        font-size: 5px;
+        text-align: right;
+        max-width: 100%;
+    }
+
+    .banner .content .person {
+        background-image: url(images/vintagerecordplayer.png);
+        width: 100%;
+        height: 40vh;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-size: auto 130%;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+    
     .button-group {
         flex-direction: column;
         width: 100%;
+    }
+
+    .detail .image::before {
+        height: 230px;
+        width: 230px;
     }
     
     .calendar-title {

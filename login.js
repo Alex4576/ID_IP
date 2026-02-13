@@ -5,15 +5,14 @@ document.getElementById('api-login-form').addEventListener('submit', async funct
         const emailValue = document.getElementById('api-email').value;
         const passwordValue = document.getElementById('api-password').value;
  
-        // Configuration for RestDB
+
         const apiKey = "698ec00cbf4bcc663d53e4ef";
-        // Example URL: https://yourdb-xxxx.restdb.io/rest/accounts
+
         const apiUrl = "https://userinfo-f1a2.restdb.io/rest/userinformation";
  
         btn.innerText = "Authenticating...";
         btn.disabled = true;
  
-        // We query RestDB to find a record matching BOTH email and password
         const queryUrl = `${apiUrl}?q=${JSON.stringify({email: emailValue, password: passwordValue})}`;
  
         try {
@@ -28,9 +27,7 @@ document.getElementById('api-login-form').addEventListener('submit', async funct
  
             const userRecords = await response.json();
  
-            // RestDB returns an array. If length > 0, the user is found.
             if (userRecords.length > 0) {
-                // Success! Store user info locally if needed
                 localStorage.setItem('userSession', JSON.stringify(userRecords[0]));
                 window.location.href = 'loginloading.html';
             } else {
