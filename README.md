@@ -1,6 +1,6 @@
 # ID_IP 
 github link: https://github.com/Alex4576/ID_IP.git 
-github pages: 
+github pages: https://alex4576.github.io/ID_IP/
   
 <h1>SPECIFICALLYRETRO</h1> 
 <p>Our website is an ecommerce website which aims to market towards people who enjoy the collection of both vintage and retro musical items. Through features like auctions, they can purchase items which are rarer and exquisite, catering to richer and more dedicated enthusiasts. For people who just wish to purchase regular items, we also provide budget friendly options. We also provide services like selling your retro items to us, for those who have lost interest in the hobby, or just want more cash to purchase another product they like.<p> 
