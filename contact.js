@@ -1,6 +1,6 @@
 /* Contact Form */
-const API_KEY = "69844f53bf4bcc5efe53e46b";
-const URL = "https://contactus-2ce8.restdb.io/rest/contact-info";
+const API_KEY = "698f7c20bf4bccbaf753e505";
+const URL = "https://contactus-a865.restdb.io/rest/info";
  
 // 2. The Event Listener
 document.getElementById("contact-form").addEventListener("submit", function(e) {
