@@ -1463,7 +1463,7 @@ select {
     gap: 20px;
     justify-content: space-between;
 }
- 
+
 .rs-grid-small {
     flex: 1;
     max-width: calc(50% - 10px);
@@ -1487,7 +1487,11 @@ select {
     display: block;
     text-align: center;
 }
- 
+
+.col-12 p {
+    font-family: "Urbanist", sans-serif;
+}
+
 
 /* Responsive */
 @media (min-width: 992px) {
@@ -1664,10 +1668,6 @@ select {
 
     .bid-buttons {
         flex-direction: column;
-    }
-
-    .steps-grid {
-        grid-template-columns: 1fr;
     }
 
     /* Profile */
