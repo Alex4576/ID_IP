@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
  
     document.getElementById('editCardBtn').addEventListener('click', (e) => {
         e.preventDefault();
-        openEditModal('displayCard', 'Update Card Type');
+        openEditModal('displayCard', 'Update Card Details');
     });
  
     document.getElementById('editAddressBtn').addEventListener('click', (e) => {
