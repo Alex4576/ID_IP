@@ -12,10 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+ <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand me-auto" href="index.html"><img src="images/logo.png" alt="logo"></a>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" role="dialog" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SpecificallyRetro</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -29,13 +29,13 @@
             <a class="nav-link mx-lg-2" href="productcatalogue.html">Shop</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link mx-lg-2 active" aria-current="page" href="auction.html">Auction</a>
+            <a class="nav-link mx-lg-2" href="auction.html">Auction</a>
           </li>
             <li class="nav-item">
             <a class="nav-link mx-lg-2" href="schedule.html">Schedule</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="about.html">About Us</a>
+            <a class="nav-link mx-lg-2 active" aria-current="page" href="about.html">About Us</a>
           </li>
             <li class="nav-item">
             <a class="nav-link mx-lg-2" href="contact.html">Contact Us</a>
@@ -54,6 +54,7 @@
     data-bs-target="#offcanvasNavbar" 
     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
+      </button>
   </div>
 </nav>
 <br>
@@ -89,9 +90,9 @@
                 <span class="close-modal">&times;</span>
                 <div class="modal-header">
                   <div id="modalImageContainer"></div>
-                <img class="modal-image" id="modalImage" src="" alt="">
+                <img class="modal-image" id="modalImage" src="images/gramophonetablenobg.png" alt="modalImage">
                 <div class="modal-header-content">
-                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <h2 class="modal-title" id="modalTitle">Item</h2>
                     <p class="modal-subtitle" id="modalSubtitle"></p>
                 </div>
             </div>

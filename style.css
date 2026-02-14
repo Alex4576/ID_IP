@@ -103,6 +103,11 @@ p {
     margin-top: 20px;
     margin-bottom: 10%;
 }
+
+.col-12 .app-info p {
+    font-family: "Orbitron", sans-serif;
+}
+
 /* Image Slider */
 .banner{
     width: 100%;
@@ -921,7 +926,6 @@ header .current-date {
     background: rgb(172, 172, 172);
 }
 
-
 /* About Page */
 .floating-container {
   display: flex;
@@ -951,13 +955,13 @@ header .current-date {
     align-items: center;
 }
  
-.variety h1 {
+.variety h1, .text-side h1 {
     display: inline-block;
     border-bottom: 2px solid #959595;
     margin-bottom: 15px;
 }
  
-.variety h2 {
+.variety h2, .appointment h2, .introduce h2 {
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.6;
@@ -1253,18 +1257,18 @@ select {
 }
 
 /* Button Style */
+.input-group button, .button, .listProduct .item button, .detail .buttons button:nth-child(2), .cta-button, .bid-now-btn, .place-bid-btn, .btn-contact, .rs-glass-btn-main, .wrapper button {
+    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
+}
+.input-group button:hover, .button:hover, .listProduct .item button:hover, .detail .buttons button:nth-child(2):hover, .cta-button:hover, .bid-now-btn:hover, .place-bid-btn:hover, .btn-contact:hover, .rs-glass-btn-main:hover, .wrapper button:hover {
+    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
+    transform: translateY(-2px);
+}
 /* Login Buttons */
 .input-group button {
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
-    background-color: black;
     border: none;
     border-radius: 5px;
 }
-
- .input-group button:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-    transform: translateY(-2px);
- }
 
  /* Navigation Bar Buttons */
  .logout-button {
@@ -1285,7 +1289,6 @@ select {
 
 /* Home Page Buttons */
 .button {
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     width: 150px;
     height: 50px;
@@ -1299,8 +1302,6 @@ select {
 }
 
  .button:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-    transform: translateY(-2px);
     color: white;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
  }
@@ -1324,7 +1325,6 @@ select {
 
 /* List of Products Buttons */
 .listProduct .item button {
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     border-radius: 5px;
     color: white;
     border: none;
@@ -1347,7 +1347,6 @@ select {
 }
 
 .detail .buttons button:nth-child(2) {
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: #eee;
     display: inline-flex;
     align-items: center;
@@ -1356,8 +1355,6 @@ select {
 }
 
 .detail .buttons button:nth-child(2):hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -1365,7 +1362,6 @@ select {
 .cta-button {
     display: inline-block;
     padding: 15px 40px;
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     text-decoration: none;
     border-radius: 50px;
@@ -1381,7 +1377,6 @@ select {
 .bid-now-btn {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     border: none;
     border-radius: 8px;
@@ -1392,8 +1387,6 @@ select {
 }
 
 .bid-now-btn:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -1425,7 +1418,6 @@ select {
 .place-bid-btn {
     flex: 2;
     padding: 15px;
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     border-radius: 10px;
     border: none;
@@ -1435,24 +1427,19 @@ select {
 }
 
 .place-bid-btn:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
     color: white;
-    transform: translateY(-2px);
     border-color: black;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Contact Page Buttons */
 .btn-contact {
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: white;
     border-radius: 5px;
 }
 
 .btn-contact:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
     color: white;
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -1492,7 +1479,6 @@ select {
 
 /* Profile Buttons */
 .rs-glass-btn-main {
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     color: #fff !important;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
@@ -1503,8 +1489,6 @@ select {
 }
  
 .rs-glass-btn-main:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-    transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -1516,14 +1500,8 @@ select {
     margin-top: 2em;
     border: none;
     color: white;
-    background: linear-gradient(135deg, #000000 0%, #3c3c3c 100%);
     padding: 0.8em 0;
     border-radius: 5px;
-}
-
-.wrapper button:hover {
-    background: linear-gradient(135deg, #3c3c3c 0%, #000000 100%);
-    transform: translateY(-2px);
 }
 
 /* Responsive */

@@ -1,5 +1,5 @@
 # ID_IP 
-github link: https://github.com/Alex4576/ID_IP.git 
+github link: https://github.com/Alex4576/ID_IP.git <br>
 github pages: https://alex4576.github.io/ID_IP/
   
 <h1>SPECIFICALLYRETRO</h1> 
@@ -42,32 +42,74 @@ has a form with a contact us page, which users must input in their name, email, 
   
   
 <h2>Technologies Used</h2> 
-<p></p> 
+<p>HTML5</p>
+- Provide the semantic structure and content for the web pages
+<p>CSS3</p>
+- Advanced styling, 3D transformations, and responsive layouts across different devices.
+<p>JavaScript (ES6+)</p>
+- handle dynamic logic, such as the currency converter API, the cart toggle (activeTabCart), and the bidding modal, as well as scheduling, leaving a message and the account detail saving features.
+
+<h3>Frameworks & Libraries</h3>
+<p>Bootstrap 5</p>
+- The project uses Bootstrap to quickly implement responsive components like the navbar, buttons, and the grid system. 
+<p>Lottie</p>
+- Render high-quality, lightweight animations
+<p>Google Fonts</p>
+- import the "Orbitron" and "Urbanist" typefaces
+
+<h3>Tools & Third-Party Integrations</h3>
+<p>Sketchfab</p>
+- Embed interactive 3D models into the collectible section of the site. 
+<p>ExchangeRate-API</p>
+- Power the real-time currency converter feature
+
+<h3>Key JavaScript Technologies & Patterns</h3>
+<p>DOM Manipulation & Web APIs</p>
+- Uses the DOM API  to dynamically inject HTML content based on the auctionItems data array. 
+
+<h3>Core Technologies & Tools</h3>
+<p>Web Storage API</p>
+- Uses localStorage to save the user's cart data directly in browser. This ensures that if a user refreshes the page or closes their tab, their selected items are still there when they return.
+
+<h3>External Tools & Services</h3>
+<p>RestDB.io</p>
+- Acts as backend, storing the messages sent by users without needing to set up a dedicated server or write server-side code (Node.js, Python, etc.).
   
 <h2>Assistive AI</h2> 
-<p></p> 
+<p>Profile Edit Credit card Info</p>
+
+<p>Validation of auction place bid feature where once auction has ended user cant bid</p> 
   
 <h2>Testing</h2> 
-<p></p> 
+<p>User Information Storage</p>
+<p>Press create account, then enter in both fields. Check if restdbio has stored data. If data can be stored correctly, move on to reset password feature, Enter new password and email. If the restdb updates the password, move on to login. If any portion does not work, check the api key and link if it is correct. Check if api key is able to post, get, put, delete. If all methods dont work, create new api and redo all fields.  
+On auction page, users press on ended auction item, and see if they can bid. Make sure that they cannot place a bid down by pressing bid buttons. 
+On contact Us page, make sure that all fields must be filled before sumbission. Error should appear if not all fields are filled 
+On schedule page, Make sure that users can press each button on the interactive calendar, and a pop up should appear, prompting the user to fill in time, name and email. If not all fields pop up, place down error message. 
+On profile page, make sure that the html updates if the user changes their name, shipping address and card information. 
+On Currency converter page, make sure users can input the amount of cash to be translated, and also the countries to convert between should all be selectable. Output should also be accurate 
+</p>
+<p>Code validation for HTML, CSS and JavaScript</p>
   
 <h2>Credits</h2> 
-<p>https://www.youtube.com/watch?v=yqaLSlPOUxM</p> 
-<p>https://www.youtube.com/watch?v=h5apE3E72wY&list=PLj0z0WBaTiH7jOjO7C0w2lSeuuisoiSR9</p> 
-<p>https://www.youtube.com/watch?v=oF28ns9eVdc</p> 
+<p>Image Slider</p>
+<p>https://www.youtube.com/watch?v=yqaLSlPOUxM</p>
+<p>Responsive Navigation Bar</p> 
+<p>https://www.youtube.com/watch?v=h5apE3E72wY&list=PLj0z0WBaTiH7jOjO7C0w2lSeuuisoiSR9</p>
+<p>Responsive Login Page</p>
+<p>https://www.youtube.com/watch?v=oF28ns9eVdc</p>
+<p>Responsive Add Cart Shopping</p>
 <p>https://www.youtube.com/watch?v=pM9tQ1u6oF0</p> 
 <p>API Currency Converter</p> 
 <p>https://www.youtube.com/watch?v=ZD_Yft-Qd9Y&list=PLNCevxogE3fiLT6bEObGeVfHVLnttptKv&index=12</p> 
 <p>Calendar</p> 
 <p>https://www.youtube.com/watch?v=Z1BGAivZRlE & TidyCal</p> 
 <p>Auction</p> 
-<p>https://www.youtube.com/watch?v=_8m6wHiJ7sA</p> 
-  
-<h3>Content</h3> 
-<p></p> 
+<p>https://www.youtube.com/watch?v=_8m6wHiJ7sA</p>  
   
 <h3>Media</h3> 
 <p>Photos used in this site were obtained from</p> 
-<p>Images used in the Image Sliders, Retro Boombox and Vintage Radio were taken from Freepik</p> 
+<p>Images used in the Image Sliders, Retro Boombox, Vintage Radio, Vintage Gramophone and Vintage Brass Trumpet were taken from Freepik</p> 
 <p>Icons used in this site were obtained from</p> 
 <p>https://flowbite.com/icons/</p> 
 <p>USB MP3 Music Player:</p> 
@@ -79,9 +121,15 @@ has a form with a contact us page, which users must input in their name, email, 
 <p>Cassette Player</p> 
 <p>https://www.pinterest.com/pin/9429480466381815/</p> 
 <p>Vinyl Record</p> 
-<p>https://www.freepik.com/free-photo/vintage-looking-vinyl-record_15024205.htm#fromView=search&page=1&position=6&uuid=5248d6db-11a6-426c-8dbb-1cf7f9753e8f&query=vinyl</p> 
+<p>https://www.freepik.com/free-photo/vintage-looking-vinyl-record_15024205.htm#fromView=search&page=1&position=6&uuid=5248d6db-11a6-426c-8dbb-1cf7f9753e8f&query=vinyl</p>
+<p>Cassette</p>
+<p>https://www.pinterest.com/pin/774124915334283/</p>
+<p>Vintage Electric Guitar</p>
+<p>https://pixabay.com/photos/guitar-music-instrument-1022710/</p>
   
 <h3>Acknowledgements</h3> 
-<p>I received inspiration from</p> 
+<p>I received inspiration from the many different website layout designs found in Pinterest</p> 
+
+<h2>Roles & Responsibilities</h2>
  
  
