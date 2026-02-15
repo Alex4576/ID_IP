@@ -5,7 +5,7 @@ let temporaryContent = document.getElementById('temporaryContent');
 
 // Load template file
 const loadTemplate = () => {
-    fetch ('/shop.html')
+    fetch ('shop.html')
     .then(response => response.text())
     .then(html => {
         app.innerHTML = html;
@@ -26,7 +26,7 @@ const initApp = () => {
         newProduct.classList.add('item');
         newProduct.innerHTML =
         `
-         <a href="/detail.html?id=${product.id}">
+         <a href="detail.html?id=${product.id}">
             <img src="${product.image}"/>
         </a>
             <h2>${product.name}</h2>
