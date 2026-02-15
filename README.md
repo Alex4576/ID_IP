@@ -7,8 +7,7 @@ Github pages: https://alex4576.github.io/ID_IP/
   
   
 <h2>Design Process</h2> 
-<p>For this website, we wanted to follow the same minimalist aesthetic of our app from figma. Therefore we used the same type of buttons, and same ype of backgrounds. 
-WHO THIS WEBSITE IS FOR: Targets users who wish to purchase musical items which can no longer be found in normal stores, people who wish to purchase exquisite one of a kind musical pieces, as well as people who want to sell off their musical items. This project would benefit them greatly, as the affordability of our products allows people who are not so well off to also participate in this hobby. We also offer expert services to verify items sold to us would be authentic, so buyers can rest assured that items they purchase are 100% authentic. <p> 
+<p>For this website, we wanted to follow the same minimalist aesthetic of our app from figma. Therefore we used the same type of buttons, and same type of backgrounds. Our Targets users are those who wish to purchase musical items which can no longer be found in normal stores, people who wish to purchase exquisite one of a kind musical pieces, as well as people who want to sell off their musical items. This project would benefit them greatly, as the affordability of our products allows people who are not so well off to also participate in this hobby. We also offer expert services to verify items sold to us would be authentic, so buyers can rest assured that items they purchase are 100% authentic. <p> 
  
   
 <h3>User Stories</h3> 
@@ -34,7 +33,7 @@ As a person who has left the hobby of musical instrument and item collection, I 
 <p>Displays different information like account name, address, and credit card in use. Users can press the button below to edit their username, location and cards used. The parts displayed will change upon pressing the save changes button after pressing the edit button. Users can also View their digital collectibles they have obtained.</p>
 <b>Contact us form</b>
 <p>A form which users must input in their name, email, along with their message. Upon completing all 3 fields, Pressing send would send the data to RESTDB to store the information.</p>
-Auction and bidding Feature  
+<b>Auction and bidding Feature</b>
 <p>Users are able to press the item which they want to bid, and they can increment the amount they want to pay by either using the +$100 or + $500 button, or they can set their own price. They must offer at least $100 more than the previous highest bidder. When pressing bid, bid will show up on the interface. There is a chance another user will enter a bid right after you.</p>
 <b>Calendar Feature</b>
 <p>The calandar feature allows user to choose a date to get their items authenticated for sale. By pressing their preferred date, they would then be allowed to choose the time they want to meet, as well as be prompted to input their name. Data is then saved in Restdb</p>
@@ -169,11 +168,11 @@ On Currency converter page, make sure users can input the amount of cash to be t
 <p>https://pixabay.com/photos/guitar-music-instrument-1022710/</p>
   
 <h3>Acknowledgements</h3> 
-<p>I received inspiration from the many different website layout designs found in Pinterest</p> 
+<p>I received inspiration from the many different website layout designs found on Pinterest</p> 
 
 <h2>Roles & Responsibilities</h2>
 <p>Alex, ensure consistent design among all webpages & code compiler</p>
-<p>Pages worked on</p>
+<p>Pages worked on:</p>
 <ul>
 <li>Login Page</li>
 <li>Lottie Animation (Login Loading Page)</li>
@@ -185,9 +184,10 @@ On Currency converter page, make sure users can input the amount of cash to be t
 </ul>
 
 <p>Kayden, ensure website works smoothly such as user inputs is stored successfully in restdb as well as providing written content</p>
-<p>Pages worked on</p>
+<p>Pages worked on:</p>
 <ul>
-<li>Forget Password & Sign Up Pages</li>
+<li>Forget Password Page</li>
+<li>Sign Up Page</li>
 <li>Schedule Page</li>
 <li>About Us Page</li>
 <li>Contact Us Page</li>
