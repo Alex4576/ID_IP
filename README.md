@@ -1,6 +1,6 @@
 # ID_IP 
-github link: https://github.com/Alex4576/ID_IP.git <br>
-github pages: https://alex4576.github.io/ID_IP/
+Github link: https://github.com/Alex4576/ID_IP.git <br>
+Github pages: https://alex4576.github.io/ID_IP/
   
 <h1>SPECIFICALLYRETRO</h1> 
 <p>Our website is an ecommerce website which aims to market towards people who enjoy the collection of both vintage and retro musical items. Through features like auctions, they can purchase items which are rarer and exquisite, catering to richer and more dedicated enthusiasts. For people who just wish to purchase regular items, we also provide budget friendly options. We also provide services like selling your retro items to us, for those who have lost interest in the hobby, or just want more cash to purchase another product they like.<p> 
@@ -19,27 +19,40 @@ As a person who has left the hobby of musical instrument and item collection, I 
 </p> 
  
   
-<h2>Features</h2> 
-<p>Auction and bidding Feature  
-Users are able to press the item which they want to bid, and they can increment the amount they want to pay by either using the +$100 or + $500 button, or they can set their own price. They must offer at least $100 more than the previous highest bidder. When pressing bid, bid will show up on the interface. There is a chance another user will enter a bid right after you.</p> 
-<p>Calendar Feature 
-The calandar feature allows user to choose a date to get their items authenticated for sale. By pressing their preferred date, they would then be allowed to choose the time they want to meet, as well as be prompted to input their name. Data is then saved in Restdb</p> 
-<p>Add to Cart Feature 
-By adding any of the items to the cart, the cart icon at the top right will increment as the number of items in cart increases, showing how many items are pending for purchase. </p> 
-<p>Checkout Feature 
-By  pressing check out, items will be decremented from cart, and item will be purchased using saved credit card from profile page. If no items in cart and user presses checkout, error message pops up. </p> 
+<h2>Features</h2>
+- Login, Reset Password, Sign up Feature
+<p>Users can login in using the account they have created as well as to change their account password</p>
+- Responsive Navigation Bar 
+<p>We have a navigation bar which allows users to go to each page of our website seamlessly</p>
+- Product Detail Feature
+<p>Pressing on the products leads them to a product detail page. This page allows users to view more information on the product as well as add product to cart and checkout.</p>
+- Add to Cart Feature 
+<p>By adding any of the items to the cart, the cart icon at the top right will increment as the number of items in cart increases, showing how many items are pending for purchase.</p>
+- Checkout Feature 
+<p>By pressing check out, items will be decremented from cart, and item will be purchased using saved credit card from profile page. If no items in cart and user presses checkout, error message pops up.</p>
+- Profile Page feature 
+<p>Displays different information like account name, address, and credit card in use. Users can press the button below to edit their username, location and cards used. The parts displayed will change upon pressing the save changes button after pressing the edit button. Users can also View their digital collectibles they have obtained.</p>
+- Contact us form 
+<p>A form which users must input in their name, email, along with their message. Upon completing all 3 fields, Pressing send would send the data to RESTDB to store the information.</p>
+- Auction and bidding Feature  
+<p>Users are able to press the item which they want to bid, and they can increment the amount they want to pay by either using the +$100 or + $500 button, or they can set their own price. They must offer at least $100 more than the previous highest bidder. When pressing bid, bid will show up on the interface. There is a chance another user will enter a bid right after you.</p>
+- Calendar Feature 
+<p>The calandar feature allows user to choose a date to get their items authenticated for sale. By pressing their preferred date, they would then be allowed to choose the time they want to meet, as well as be prompted to input their name. Data is then saved in Restdb</p>
+- Currency Converter Feature
+<p>Users can check how much our product cost based on the currency chosen</p>
   
 <h3>Existing Features</h3> 
-<p>Responsive Navigation Bar 
-We have a navigation bar which allows users to go to each page of our website seamlessly </p> 
-<p>Image Slider</p> 
-<p>Shop feature 
-Pressing on the products leads them to a product purchase page. This page allows users to view description of the product as well as price and also as the add to cart button.  
-<P> profile Page feature 
-displays different information like account name, address, and credit card in use. Users can press the button below to edit their username, location and cards used. The parts displayed will change upon pressing the save changes button after pressing the edit button. 
-<p>contact us form 
-has a form with a contact us page, which users must input in their name, email, along with their message. Upon completing all 3 fields, Pressing send would send the data to RESTDB to store the information.  
-  
+- Login, Reset Password, Sign up Feature
+- Responsive Navigation Bar
+- Auction Feature
+- Add to Cart Feature
+- View Product Detail Feature
+- Checkout Feature
+- Schedule Appointment Feature
+- Contact Us Feature
+- Edit Profile Feature
+- Currency Converter Feature
+- View Collectible Gallery
   
 <h2>Technologies Used</h2> 
 <p>HTML5</p>
@@ -76,10 +89,14 @@ has a form with a contact us page, which users must input in their name, email, 
 - Acts as backend, storing the messages sent by users without needing to set up a dedicated server or write server-side code (Node.js, Python, etc.).
   
 <h2>Assistive AI</h2> 
-<p>Profile Edit Credit card Info</p>
+<p>ChatGPT was used to assist</p>
+<p>In adding more fields for profile edit credit card info</p>
+!(images/AssistiveAI1.png)
+<p>Implement validation for auction place bid feature where once auction has ended user cant bid</p> 
+!(images/AssistiveAI2.png)
+!(images/AssistiveAI3.png)
+!(images/AssistiveAI4.png)
 
-<p>Validation of auction place bid feature where once auction has ended user cant bid</p> 
-  
 <h2>Testing</h2> 
 <p>User Information Storage</p>
 <p>Press create account, then enter in both fields. Check if restdbio has stored data. If data can be stored correctly, move on to reset password feature, Enter new password and email. If the restdb updates the password, move on to login. If any portion does not work, check the api key and link if it is correct. Check if api key is able to post, get, put, delete. If all methods dont work, create new api and redo all fields.  
@@ -131,5 +148,22 @@ On Currency converter page, make sure users can input the amount of cash to be t
 <p>I received inspiration from the many different website layout designs found in Pinterest</p> 
 
 <h2>Roles & Responsibilities</h2>
+<p>Alex, ensure consistent design among all webpages & code compiler</p>
+<p>Pages worked on</p>
+- Login Page
+- Product Catalogue Page
+- Product Detail Page
+- Auction Page
+- Currency Converter Page
+- Gallery Collectible Page
+
+<p>Kayden, ensure website works smoothly such as user inputs is stored successfully in restdb as well as providing written content</p>
+<p>Pages worked on</p>
+- Forget Password & Sign Up Pages
+- Schedule Page
+- About Us Page
+- Contact Us Page
+- Profile Page
+- Usage of restdb for Login, Forget, Sign Up, Schedule & Contact Pages
  
  
