@@ -171,7 +171,7 @@ On Currency converter page, make sure users can input the amount of cash to be t
 <p>I received inspiration from the many different website layout designs found on Pinterest</p> 
 
 <h2>Roles & Responsibilities</h2>
-<p>Alex, ensure consistent design among all webpages & code compiler</p>
+<p>Alex (Front-End Developer), ensure consistent design among all webpages & code compiler</p>
 <p>Pages worked on:</p>
 <ul>
 <li>Login Page</li>
@@ -183,7 +183,7 @@ On Currency converter page, make sure users can input the amount of cash to be t
 <li>Gallery Collectible Page</li>
 </ul>
 
-<p>Kayden, ensure website works smoothly such as user inputs is stored successfully in restdb as well as providing written content</p>
+<p>Kayden (Back-End Developer), ensure website works smoothly such as user inputs is stored successfully in restdb as well as providing written content</p>
 <p>Pages worked on:</p>
 <ul>
 <li>Forget Password Page</li>
