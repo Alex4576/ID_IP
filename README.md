@@ -114,9 +114,9 @@ Auction and bidding Feature
   
 <h2>Assistive AI</h2> 
 <p>ChatGPT was used to assist</p>
-<p>In adding more fields for profile edit credit card info</p>
-<img src="images/AssistiveAI1.png">
 <p>Implement validation for auction place bid feature where once auction has ended user cant bid</p> 
+<img src="images/AssistiveAI1.png">
+<p>In adding more fields for profile edit credit card info</p>
 <img src="images/AssistiveAI2.png">
 <img src="images/AssistiveAI3.png">
 <img src="images/AssistiveAI4.png">
@@ -179,7 +179,7 @@ On Currency converter page, make sure users can input the amount of cash to be t
 <li>Lottie Animation (Login Loading Page)</li>
 <li>Product Catalogue Page</li>
 <li>Product Detail Page</li>
-<li>Auction Page<li>
+<li>Auction Page</li>
 <li>API Currency Converter Page</li>
 <li>Gallery Collectible Page</li>
 </ul>

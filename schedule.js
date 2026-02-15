@@ -126,7 +126,7 @@ document.getElementById("bookingForm").addEventListener("submit", async (e) => {
         });
  
         if (response.ok) {
-            alert("Booking Saved Successfully!");
+            alert("Appointment Booked Successfully!");
             bookingModal.hide();
             loadBookingsAndRender();
         }
