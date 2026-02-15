@@ -20,82 +20,106 @@ As a person who has left the hobby of musical instrument and item collection, I 
  
   
 <h2>Features</h2>
-- Login, Reset Password, Sign up Feature
+<b>Login, Reset Password, Sign up Feature</b>
 <p>Users can login in using the account they have created as well as to change their account password</p>
-- Responsive Navigation Bar 
+<b>Responsive Navigation Bar</b>
 <p>We have a navigation bar which allows users to go to each page of our website seamlessly</p>
-- Product Detail Feature
+<b>Product Detail Feature</b>
 <p>Pressing on the products leads them to a product detail page. This page allows users to view more information on the product as well as add product to cart and checkout.</p>
-- Add to Cart Feature 
+<b>Add to Cart Feature</b>
 <p>By adding any of the items to the cart, the cart icon at the top right will increment as the number of items in cart increases, showing how many items are pending for purchase.</p>
-- Checkout Feature 
+<b>Checkout Feature</b>
 <p>By pressing check out, items will be decremented from cart, and item will be purchased using saved credit card from profile page. If no items in cart and user presses checkout, error message pops up.</p>
-- Profile Page feature 
+<b>Profile Page feature</b>
 <p>Displays different information like account name, address, and credit card in use. Users can press the button below to edit their username, location and cards used. The parts displayed will change upon pressing the save changes button after pressing the edit button. Users can also View their digital collectibles they have obtained.</p>
-- Contact us form 
+<b>Contact us form</b>
 <p>A form which users must input in their name, email, along with their message. Upon completing all 3 fields, Pressing send would send the data to RESTDB to store the information.</p>
-- Auction and bidding Feature  
+Auction and bidding Feature  
 <p>Users are able to press the item which they want to bid, and they can increment the amount they want to pay by either using the +$100 or + $500 button, or they can set their own price. They must offer at least $100 more than the previous highest bidder. When pressing bid, bid will show up on the interface. There is a chance another user will enter a bid right after you.</p>
-- Calendar Feature 
+<b>Calendar Feature</b>
 <p>The calandar feature allows user to choose a date to get their items authenticated for sale. By pressing their preferred date, they would then be allowed to choose the time they want to meet, as well as be prompted to input their name. Data is then saved in Restdb</p>
-- Currency Converter Feature
+<b>Currency Converter Feature</b>
 <p>Users can check how much our product cost based on the currency chosen</p>
   
-<h3>Existing Features</h3> 
-- Login, Reset Password, Sign up Feature
-- Responsive Navigation Bar
-- Auction Feature
-- Add to Cart Feature
-- View Product Detail Feature
-- Checkout Feature
-- Schedule Appointment Feature
-- Contact Us Feature
-- Edit Profile Feature
-- Currency Converter Feature
-- View Collectible Gallery
+<h3>Existing Features</h3>
+<ul>
+<li>Login, Reset Password, Sign up Feature</li>
+<li>Responsive Navigation Bar</li>
+<li>Auction Feature</li>
+<li>Add to Cart Feature</li>
+<li>View Product Detail Feature</li>
+<li>Checkout Feature</li>
+<li>Schedule Appointment Feature</li>
+<li>Contact Us Feature</li>
+<li>Edit Profile Feature</li>
+<li>Currency Converter Feature</li>
+<li>View Collectible Gallery</li>
+</ul>
   
 <h2>Technologies Used</h2> 
 <p>HTML5</p>
-- Provide the semantic structure and content for the web pages
+<ul>
+<li>Provide the semantic structure and content for the web pages</li>
+</ul>
 <p>CSS3</p>
-- Advanced styling, 3D transformations, and responsive layouts across different devices.
+<ul>
+<li>Advanced styling, 3D transformations, and responsive layouts across different devices.</li>
+</ul>
 <p>JavaScript (ES6+)</p>
-- handle dynamic logic, such as the currency converter API, the cart toggle (activeTabCart), and the bidding modal, as well as scheduling, leaving a message and the account detail saving features.
+<ul>
+<li>handle dynamic logic, such as the currency converter API, the cart toggle (activeTabCart), and the bidding modal, as well as scheduling, leaving a message and the account detail saving features.</li>
+</ul>
 
 <h3>Frameworks & Libraries</h3>
-<p>Bootstrap 5</p>
-- The project uses Bootstrap to quickly implement responsive components like the navbar, buttons, and the grid system. 
-<p>Lottie</p>
-- Render high-quality, lightweight animations
-<p>Google Fonts</p>
-- import the "Orbitron" and "Urbanist" typefaces
+<p>Bootstrap 5 (https://getbootstrap.com/)</p>
+<ul>
+<li>The project uses Bootstrap to quickly implement responsive components like the navbar, buttons, and the grid system.</li>
+</ul>
+<p>Lottie (https://lottiefiles.com/)</p>
+<ul>
+<li>Render high-quality, lightweight animations</li>
+</ul>
+<p>Google Fonts (https://fonts.google.com/)</p>
+<ul>
+<li>import the "Orbitron" and "Urbanist" typefaces</li>
+</ul>
 
 <h3>Tools & Third-Party Integrations</h3>
-<p>Sketchfab</p>
-- Embed interactive 3D models into the collectible section of the site. 
-<p>ExchangeRate-API</p>
-- Power the real-time currency converter feature
+<p>Sketchfab (https://sketchfab.com/feed)</p>
+<ul>
+<li>Embed interactive 3D models into the collectible section of the site.</li>
+</ul>
+<p>ExchangeRate-API (https://www.exchangerate-api.com/)</p>
+<ul>
+<li>Power the real-time currency converter feature</li>
+</ul>
 
 <h3>Key JavaScript Technologies & Patterns</h3>
-<p>DOM Manipulation & Web APIs</p>
-- Uses the DOM API  to dynamically inject HTML content based on the auctionItems data array. 
+<p>DOM Manipulation & Web APIs (https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)</p>
+<ul>
+<li>Uses the DOM API  to dynamically inject HTML content based on the auctionItems data array.</li>
+</ul>
 
 <h3>Core Technologies & Tools</h3>
-<p>Web Storage API</p>
-- Uses localStorage to save the user's cart data directly in browser. This ensures that if a user refreshes the page or closes their tab, their selected items are still there when they return.
+<p>Web Storage API (https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)</p>
+<ul>
+<li>Uses localStorage to save the user's cart data directly in browser. This ensures that if a user refreshes the page or closes their tab, their selected items are still there when they return.</li>
+</ul>
 
 <h3>External Tools & Services</h3>
-<p>RestDB.io</p>
-- Acts as backend, storing the messages sent by users without needing to set up a dedicated server or write server-side code (Node.js, Python, etc.).
+<p>RestDB.io (https://restdb.io/)</p>
+<ul>
+<li>Acts as backend, storing the messages sent by users without needing to set up a dedicated server or write server-side code (Node.js, Python, etc.).</li>
+</ul>
   
 <h2>Assistive AI</h2> 
 <p>ChatGPT was used to assist</p>
 <p>In adding more fields for profile edit credit card info</p>
-!(images/AssistiveAI1.png)
+<img src="images/AssistiveAI1.png">
 <p>Implement validation for auction place bid feature where once auction has ended user cant bid</p> 
-!(images/AssistiveAI2.png)
-!(images/AssistiveAI3.png)
-!(images/AssistiveAI4.png)
+<img src="images/AssistiveAI2.png">
+<img src="images/AssistiveAI3.png">
+<img src="images/AssistiveAI4.png">
 
 <h2>Testing</h2> 
 <p>User Information Storage</p>
@@ -150,20 +174,25 @@ On Currency converter page, make sure users can input the amount of cash to be t
 <h2>Roles & Responsibilities</h2>
 <p>Alex, ensure consistent design among all webpages & code compiler</p>
 <p>Pages worked on</p>
-- Login Page
-- Product Catalogue Page
-- Product Detail Page
-- Auction Page
-- Currency Converter Page
-- Gallery Collectible Page
+<ul>
+<li>Login Page</li>
+<li>Lottie Animation (Login Loading Page)</li>
+<li>Product Catalogue Page</li>
+<li>Product Detail Page</li>
+<li>Auction Page<li>
+<li>API Currency Converter Page</li>
+<li>Gallery Collectible Page</li>
+</ul>
 
 <p>Kayden, ensure website works smoothly such as user inputs is stored successfully in restdb as well as providing written content</p>
 <p>Pages worked on</p>
-- Forget Password & Sign Up Pages
-- Schedule Page
-- About Us Page
-- Contact Us Page
-- Profile Page
-- Usage of restdb for Login, Forget, Sign Up, Schedule & Contact Pages
+<ul>
+<li>Forget Password & Sign Up Pages</li>
+<li>Schedule Page</li>
+<li>About Us Page</li>
+<li>Contact Us Page</li>
+<li>Profile Page</li>
+<li>Usage of restdb for Login, Forget, Sign Up, Schedule & Contact Pages</li>
+</ul>
  
  
